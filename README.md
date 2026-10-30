@@ -108,15 +108,7 @@ The program refuses to overwrite existing output files.
 - The tool currently processes data in chunks to limit memory use, but the three output shares are the same size as the encrypted stream, so total storage use is approximately three times the encrypted payload size.
 - The key file is stored unencrypted. Its physical and access-control protection is the user's responsibility.
 
-## Tests
 
-Run the automated tests:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-The tests cover round-trip recovery, empty files, binary data, tampered shares, incorrect keys, mismatched share sizes, and overwrite protection.
 
 ## License
 
